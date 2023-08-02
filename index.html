@@ -4,6 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Under Construction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <style media="screen" type="text/css">
         html {
@@ -129,6 +130,36 @@
     <script>
         document.getElementById("site_domain").innerHTML = window.location.hostname;
     </script>
+    <div>
+        <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+        <div id="aplayer"></div>
+        <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+        <script>
+            const ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                fixed: true,
+                autoplay: false,
+                preload: 'auto',
+                mutex: true,
+                listFolded: true,
+                listMaxHeight: 90,
+                audio: [
+                    {
+                        name: 'Night Breeze',
+                        artist: 'Tales Weaver',
+                        url: '0090.MP3',
+                        cover: '',
+                    },
+                    {
+                        name: 'Theme 87',
+                        artist: 'Blue Archive',
+                        url: 'Theme_87.mp3',
+                        cover: '',
+                    }
+                ]
+            });
+        </script>
+    </div>
 </body>
 
 </html>
