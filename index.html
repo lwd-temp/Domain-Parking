@@ -12,7 +12,7 @@
         }
 
         body {
-            color: #fff;
+            /** color: #fff; **/
             margin: 0;
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
@@ -20,6 +20,10 @@
             line-height: 22px;
             height: 100%;
             background-color: #fff;
+        }
+
+        .wrap {
+            color: #fff;
         }
 
         h1 {
@@ -130,6 +134,9 @@
     <script>
         document.getElementById("site_domain").innerHTML = window.location.hostname;
     </script>
+</body>
+
+<footer>
     <div>
         <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
         <div id="aplayer"></div>
@@ -160,6 +167,6 @@
             });
         </script>
     </div>
-</body>
+</footer>
 
 </html>
