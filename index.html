@@ -133,6 +133,39 @@
     </div>
     <script>
         document.getElementById("site_domain").innerHTML = window.location.hostname;
+
+        // https://developer.aliyun.com/article/195912
+        function getMainHost() {
+            let key = `mh_${Math.random()}`;
+            let keyR = new RegExp(`(^|;)\\s*${key}=12345`);
+            let expiredTime = new Date(0);
+            let domain = document.domain;
+            let domainList = domain.split('.');
+
+            let urlItems = [];
+            // 主域名一定会有两部分组成
+            urlItems.unshift(domainList.pop());
+            // 慢慢从后往前测试
+            while (domainList.length) {
+                urlItems.unshift(domainList.pop());
+                let mainHost = urlItems.join('.');
+                let cookie = `${key}=${12345};domain=.${mainHost}`;
+
+                document.cookie = cookie;
+
+                //如果cookie存在，则说明域名合法
+                if (keyR.test(document.cookie)) {
+                    document.cookie = `${cookie};expires=${expiredTime}`;
+                    return mainHost;
+                }
+            }
+        }
+
+        // try to get main host
+        var mainHost = getMainHost();
+        if (mainHost) {
+            document.getElementById("site_domain").innerHTML = mainHost;
+        }
     </script>
 </body>
 
