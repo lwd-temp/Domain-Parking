@@ -1,213 +1,456 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Under Construction</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400"
+      rel="stylesheet"
+    />
     <style media="screen" type="text/css">
-        html {
-            height: 100%;
-        }
+      html {
+        height: 100%;
+      }
 
-        body {
-            /** color: #fff; **/
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-size: 14px;
-            line-height: 22px;
-            height: 100%;
-            background-color: #fff;
-        }
+      body {
+        /** color: #fff; **/
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 22px;
+        height: 100%;
+        background-color: #fff;
+      }
 
-        .wrap {
-            color: #fff;
-        }
+      .wrap {
+        color: #fff;
+      }
 
+      h1 {
+        margin-top: 20px;
+        font-size: 50px;
+        opacity: 1;
+      }
+
+      @media all and (max-width: 980px) {
         h1 {
-            margin-top: 20px;
-            font-size: 50px;
-            opacity: 1;
+          font-size: 35px;
         }
 
-        @media all and (max-width: 980px) {
-            h1 {
-                font-size: 35px;
-            }
+        .under-construction p {
+          font-size: 20px;
+        }
+      }
 
-            .under-construction p {
-                font-size: 20px;
-            }
+      @media all and (max-width: 767px) {
+        h1 {
+          font-size: 28px;
         }
 
-        @media all and (max-width: 767px) {
-            h1 {
-                font-size: 28px;
-            }
-
-            .under-construction p {
-                font-size: 16px;
-            }
+        .under-construction p {
+          font-size: 16px;
         }
+      }
 
-        h2 {
-            font-style: normal;
-            font-size: 14px;
-            line-height: 22px;
-            margin: 0;
-        }
+      h2 {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0;
+      }
 
-        .wrap {
-            height: auto;
-            min-height: 100%;
-            background-color: #3B4251;
-        }
+      .wrap {
+        height: auto;
+        min-height: 100%;
+        background-color: #3b4251;
+      }
 
-        .domain {
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            margin-left: -50%;
-            top: 42.5%;
-            left: 50%;
-        }
+      .domain {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin-left: -50%;
+        top: 42.5%;
+        left: 50%;
+      }
 
-        .footer {
-            text-align: center;
-            color: #DCDCDC;
-            margin: auto;
-            padding: 15px 20px 18px 20px;
-            position: relative;
-            clear: both;
-            height: 40px;
-            margin-top: -73px;
-            background-color: #444;
-            font-size: 12px;
-            line-height: 22px;
-        }
+      .footer {
+        text-align: center;
+        color: #dcdcdc;
+        margin: auto;
+        padding: 15px 20px 18px 20px;
+        position: relative;
+        clear: both;
+        height: 40px;
+        margin-top: -73px;
+        background-color: #444;
+        font-size: 12px;
+        line-height: 22px;
+      }
 
-        p {
-            margin: 0;
-        }
+      p {
+        margin: 0;
+      }
 
-        .footer a {
-            color: #DCDCDC;
-        }
+      .footer a {
+        color: #dcdcdc;
+      }
 
-        p.description {
-            padding-top: 10px;
-            font-size: 18px;
-        }
+      p.description {
+        padding-top: 10px;
+        font-size: 18px;
+      }
 
-        .avoori-logo {
-            margin: 20px;
-            max-width: 40px;
-        }
+      .avoori-logo {
+        margin: 20px;
+        max-width: 40px;
+      }
 
-        .under-construction {
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            bottom: 5%;
-            font-size: 24px;
-            line-height: 1;
-            font-weight: 300;
-        }
+      .under-construction {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 5%;
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 300;
+      }
 
-        img {
-            filter: brightness(0) invert(1);
-        }
+      img {
+        filter: brightness(0) invert(1);
+      }
     </style>
-    <script async src="https://sense.lwd-temp.top/sense"
-        data-website-id="e0f02872-1725-42fe-ace3-810b49465e4c"></script>
-</head>
+    <script
+      async
+      src="https://sense.lwd-temp.top/sense"
+      data-website-id="e0f02872-1725-42fe-ace3-810b49465e4c"
+    ></script>
+  </head>
 
-<body>
+  <body id="content-confetti">
     <div class="wrap">
-        <div class="domain">
-            <h1 id="site_domain">mydomain.com</h1>
-        </div>
-        <div class="under-construction">
-            <p>We're just getting ready, check back soon.</p>
-        </div>
+      <div class="domain">
+        <h1 id="site_domain">mydomain.com</h1>
+      </div>
+      <div class="under-construction">
+        <p>We're just getting ready, check back soon.</p>
+      </div>
     </div>
     <script>
-        document.getElementById("site_domain").innerHTML = window.location.hostname;
+      document.getElementById("site_domain").innerHTML =
+        window.location.hostname;
 
-        // https://developer.aliyun.com/article/195912
-        function getMainHost() {
-            let key = `mh_${Math.random()}`;
-            let keyR = new RegExp(`(^|;)\\s*${key}=12345`);
-            let expiredTime = new Date(0);
-            let domain = document.domain;
-            let domainList = domain.split('.');
+      // https://developer.aliyun.com/article/195912
+      function getMainHost() {
+        let key = `mh_${Math.random()}`;
+        let keyR = new RegExp(`(^|;)\\s*${key}=12345`);
+        let expiredTime = new Date(0);
+        let domain = document.domain;
+        let domainList = domain.split(".");
 
-            let urlItems = [];
-            // 主域名一定会有两部分组成
-            urlItems.unshift(domainList.pop());
-            // 慢慢从后往前测试
-            while (domainList.length) {
-                urlItems.unshift(domainList.pop());
-                let mainHost = urlItems.join('.');
-                let cookie = `${key}=${12345};domain=.${mainHost}`;
+        let urlItems = [];
+        // 主域名一定会有两部分组成
+        urlItems.unshift(domainList.pop());
+        // 慢慢从后往前测试
+        while (domainList.length) {
+          urlItems.unshift(domainList.pop());
+          let mainHost = urlItems.join(".");
+          let cookie = `${key}=${12345};domain=.${mainHost}`;
 
-                document.cookie = cookie;
+          document.cookie = cookie;
 
-                //如果cookie存在，则说明域名合法
-                if (keyR.test(document.cookie)) {
-                    document.cookie = `${cookie};expires=${expiredTime}`;
-                    return mainHost;
-                }
-            }
+          //如果cookie存在，则说明域名合法
+          if (keyR.test(document.cookie)) {
+            document.cookie = `${cookie};expires=${expiredTime}`;
+            return mainHost;
+          }
         }
+      }
 
-        // try to get main host
-        var mainHost = getMainHost();
-        if (mainHost) {
-            document.getElementById("site_domain").innerHTML = mainHost;
-        }
+      // try to get main host
+      var mainHost = getMainHost();
+      if (mainHost) {
+        document.getElementById("site_domain").innerHTML = mainHost;
+      }
     </script>
-</body>
+  </body>
 
-<footer>
+  <footer>
     <div>
-        <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
-        <div id="aplayer"></div>
-        <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
-        <script>
-            const ap = new APlayer({
-                container: document.getElementById('aplayer'),
-                fixed: true,
-                autoplay: false,
-                preload: 'auto',
-                mutex: true,
-                listFolded: true,
-                listMaxHeight: 90,
-                audio: [
-                    {
-                        name: 'Night Breeze',
-                        artist: 'Tales Weaver',
-                        url: '0090.MP3',
-                        cover: '',
-                    },
-                    {
-                        name: 'Theme 87',
-                        artist: 'Blue Archive',
-                        url: 'Theme_87.mp3',
-                        cover: '',
-                    },
-                    {
-                        name: 'Get Over the World',
-                        artist: 'Blue Archive',
-                        url: 'GetOvertheWorld.mp3',
-                        cover: '',
-                    }
-                ]
-            });
-        </script>
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css"
+      />
+      <div id="aplayer"></div>
+      <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+      <script>
+        const ap = new APlayer({
+          container: document.getElementById("aplayer"),
+          fixed: true,
+          autoplay: false,
+          preload: "auto",
+          mutex: true,
+          listFolded: true,
+          listMaxHeight: 90,
+          audio: [
+            {
+              name: "Night Breeze",
+              artist: "Tales Weaver",
+              url: "0090.MP3",
+              cover: "",
+            },
+            {
+              name: "Theme 87",
+              artist: "Blue Archive",
+              url: "Theme_87.mp3",
+              cover: "",
+            },
+            {
+              name: "Get Over the World",
+              artist: "Blue Archive",
+              url: "GetOvertheWorld.mp3",
+              cover: "",
+            },
+          ],
+        });
+      </script>
     </div>
-</footer>
 
+    <script>
+      // https://confettijs.org/
+      var Confetti = (function () {
+        var t = (function () {
+            return function () {
+              (this.gravity = 10),
+                (this.particle_count = 75),
+                (this.particle_size = 1),
+                (this.explosion_power = 25),
+                (this.destroy_target = !0),
+                (this.fade = !1);
+            };
+          })(),
+          e = (function () {
+            function e(n) {
+              var r = this;
+              if (
+                ((this.bursts = []),
+                (this.setCount = function (t) {
+                  if ("number" != typeof t)
+                    throw new Error("Input must be of type 'number'");
+                  e.CONFIG.particle_count = t;
+                }),
+                (this.setPower = function (t) {
+                  if ("number" != typeof t)
+                    throw new Error("Input must be of type 'number'");
+                  e.CONFIG.explosion_power = t;
+                }),
+                (this.setSize = function (t) {
+                  if ("number" != typeof t)
+                    throw new Error("Input must be of type 'number'");
+                  e.CONFIG.particle_size = t;
+                }),
+                (this.setFade = function (t) {
+                  if ("boolean" != typeof t)
+                    throw new Error("Input must be of type 'boolean'");
+                  e.CONFIG.fade = t;
+                }),
+                (this.destroyTarget = function (t) {
+                  if ("boolean" != typeof t)
+                    throw new Error("Input must be of type 'boolean'");
+                  e.CONFIG.destroy_target = t;
+                }),
+                (this.setupCanvasContext = function () {
+                  if (!e.CTX) {
+                    var t = document.createElement("canvas");
+                    (e.CTX = t.getContext("2d")),
+                      (t.width = 2 * window.innerWidth),
+                      (t.height = 2 * window.innerHeight),
+                      (t.style.position = "fixed"),
+                      (t.style.top = "0"),
+                      (t.style.left = "0"),
+                      (t.style.width = "calc(100%)"),
+                      (t.style.height = "calc(100%)"),
+                      (t.style.margin = "0"),
+                      (t.style.padding = "0"),
+                      (t.style.zIndex = "999999999"),
+                      (t.style.pointerEvents = "none"),
+                      document.body.appendChild(t),
+                      window.addEventListener("resize", function () {
+                        (t.width = 2 * window.innerWidth),
+                          (t.height = 2 * window.innerHeight);
+                      });
+                  }
+                }),
+                (this.setupElement = function (t) {
+                  var n;
+                  (r.element = document.getElementById(t)),
+                    null === (n = r.element) ||
+                      void 0 === n ||
+                      n.addEventListener("click", function (t) {
+                        var n = new o(2 * t.clientX, 2 * t.clientY);
+                        r.bursts.push(new i(n)),
+                          e.CONFIG.destroy_target &&
+                            (r.element.style.visibility = "hidden");
+                      });
+                }),
+                (this.update = function (t) {
+                  (r.delta_time = (t - r.time) / 1e3), (r.time = t);
+                  for (var e = r.bursts.length - 1; e >= 0; e--)
+                    r.bursts[e].update(r.delta_time),
+                      0 == r.bursts[e].particles.length &&
+                        r.bursts.splice(e, 1);
+                  r.draw(), window.requestAnimationFrame(r.update);
+                }),
+                !n)
+              )
+                throw new Error("Missing id");
+              e.CONFIG || (e.CONFIG = new t()),
+                (this.time = new Date().getTime()),
+                (this.delta_time = 0),
+                this.setupCanvasContext(),
+                this.setupElement(n),
+                window.requestAnimationFrame(this.update);
+            }
+            return (
+              (e.prototype.draw = function () {
+                s.clearScreen();
+                for (var t = 0, e = this.bursts; t < e.length; t++) {
+                  e[t].draw();
+                }
+              }),
+              e
+            );
+          })(),
+          i = (function () {
+            function t(t) {
+              this.particles = [];
+              for (var i = 0; i < e.CONFIG.particle_count; i++)
+                this.particles.push(new n(t));
+            }
+            return (
+              (t.prototype.update = function (t) {
+                for (var e = this.particles.length - 1; e >= 0; e--)
+                  this.particles[e].update(t),
+                    this.particles[e].checkBounds() &&
+                      this.particles.splice(e, 1);
+              }),
+              (t.prototype.draw = function () {
+                for (var t = this.particles.length - 1; t >= 0; t--)
+                  this.particles[t].draw();
+              }),
+              t
+            );
+          })(),
+          n = (function () {
+            function t(t) {
+              (this.size = new o(
+                (16 * Math.random() + 4) * e.CONFIG.particle_size,
+                (4 * Math.random() + 4) * e.CONFIG.particle_size
+              )),
+                (this.position = new o(
+                  t.x - this.size.x / 2,
+                  t.y - this.size.y / 2
+                )),
+                (this.velocity = r.generateVelocity()),
+                (this.rotation = 360 * Math.random()),
+                (this.rotation_speed = 10 * (Math.random() - 0.5)),
+                (this.hue = 360 * Math.random()),
+                (this.opacity = 100),
+                (this.lifetime = Math.random() + 0.25);
+            }
+            return (
+              (t.prototype.update = function (t) {
+                (this.velocity.y +=
+                  e.CONFIG.gravity *
+                  (this.size.y / (10 * e.CONFIG.particle_size)) *
+                  t),
+                  (this.velocity.x += 25 * (Math.random() - 0.5) * t),
+                  (this.velocity.y *= 0.98),
+                  (this.velocity.x *= 0.98),
+                  (this.position.x += this.velocity.x),
+                  (this.position.y += this.velocity.y),
+                  (this.rotation += this.rotation_speed),
+                  e.CONFIG.fade && (this.opacity -= this.lifetime);
+              }),
+              (t.prototype.checkBounds = function () {
+                return (
+                  this.position.y - 2 * this.size.x > 2 * window.innerHeight
+                );
+              }),
+              (t.prototype.draw = function () {
+                s.drawRectangle(
+                  this.position,
+                  this.size,
+                  this.rotation,
+                  this.hue,
+                  this.opacity
+                );
+              }),
+              t
+            );
+          })(),
+          o = (function () {
+            return function (t, e) {
+              (this.x = t || 0), (this.y = e || 0);
+            };
+          })(),
+          r = (function () {
+            function t() {}
+            return (
+              (t.generateVelocity = function () {
+                var t = Math.random() - 0.5,
+                  i = Math.random() - 0.7,
+                  n = Math.sqrt(t * t + i * i);
+                return (
+                  (i /= n),
+                  new o(
+                    (t /= n) * (Math.random() * e.CONFIG.explosion_power),
+                    i * (Math.random() * e.CONFIG.explosion_power)
+                  )
+                );
+              }),
+              t
+            );
+          })(),
+          s = (function () {
+            function t() {}
+            return (
+              (t.clearScreen = function () {
+                e.CTX &&
+                  e.CTX.clearRect(
+                    0,
+                    0,
+                    2 * window.innerWidth,
+                    2 * window.innerHeight
+                  );
+              }),
+              (t.drawRectangle = function (t, i, n, o, r) {
+                e.CTX &&
+                  (e.CTX.save(),
+                  e.CTX.beginPath(),
+                  e.CTX.translate(t.x + i.x / 2, t.y + i.y / 2),
+                  e.CTX.rotate((n * Math.PI) / 180),
+                  e.CTX.rect(-i.x / 2, -i.y / 2, i.x, i.y),
+                  (e.CTX.fillStyle =
+                    "hsla(" + o + "deg, 90%, 65%, " + r + "%)"),
+                  e.CTX.fill(),
+                  e.CTX.restore());
+              }),
+              t
+            );
+          })();
+        return e;
+      })();
+    </script>
+    <script>
+      let confetti = new Confetti("content-confetti");
+      confetti.setCount(75);
+      confetti.setSize(1);
+      confetti.setPower(25);
+      confetti.setFade(false);
+      confetti.destroyTarget(false);
+    </script>
+  </footer>
 </html>
